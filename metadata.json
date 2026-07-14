@@ -1,0 +1,6 @@
+{
+  "name": "Balaji Online Services",
+  "description": "A digital portal for managing government applications and utilities, drafting service documents, and getting AI-powered translation assistance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
