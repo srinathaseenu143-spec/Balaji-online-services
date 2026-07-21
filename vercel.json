@@ -1,0 +1,18 @@
+{
+  "buildCommand": "next build",
+  "headers": [
+    {
+      "source": "/downloads/:path*",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/vnd.android.package-archive"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=balaji-online-service.apk"
+        }
+      ]
+    }
+  ]
+}

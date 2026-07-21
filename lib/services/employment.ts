@@ -1,0 +1,25 @@
+import type { Service } from '@/lib/services'
+
+export const employmentServices: Service[] = [
+  { id: 26, name: 'National Career Service (NCS Latest Jobs Portal)', url: 'https://ncs.gov.in', category: 'Employment & Commerce', description: 'Government job portal' },
+  { id: 27, name: 'MyGov Career & Content Platform', url: 'https://mygov.in', category: 'Employment & Commerce', description: 'Citizen engagement platform' },
+  { id: 28, name: 'NITI Aayog Vacancies & Internships', url: 'https://niti.gov.in', category: 'Employment & Commerce', description: 'Policy institution vacancies' },
+  { id: 29, name: 'BECIL Careers', url: 'https://becil.com', category: 'Employment & Commerce', description: 'Broadcast engineering careers' },
+  { id: 30, name: 'SETU (SC Scholarship Application Gateway)', url: 'https://web.umang.gov.in/landing/department/setu.html', category: 'Employment & Commerce', description: 'Scholarship portal' },
+  { id: 31, name: 'CBSE Exam Results Portal', url: 'https://cbseresults.nic.in', category: 'Employment & Commerce', description: 'School board results' },
+  { id: 32, name: 'National Consumer Helpline (Grievance Registration)', url: 'https://consumerhelpline.gov.in', category: 'Employment & Commerce', description: 'Consumer complaints' },
+  { id: 33, name: 'India Meteorological Department (Weather Reports)', url: 'https://mausam.imd.gov.in', category: 'Employment & Commerce', description: 'Weather forecasts' },
+  { id: 34, name: 'LPG Gas Booking (MyLPG Hub)', url: 'https://mylpg.in', category: 'Employment & Commerce', description: 'LPG delivery service' },
+  { id: 35, name: 'Income Tax E-Filing Portal', url: 'https://incometax.gov.in', category: 'Employment & Commerce', description: 'Tax filing services' },
+  { id: 36, name: 'GST Services Portal', url: 'https://gst.gov.in', category: 'Employment & Commerce', description: 'Goods & services tax' },
+  { id: 37, name: 'UDYAM MSME Registration', url: 'https://udyamregistration.gov.in', category: 'Employment & Commerce', description: 'Small business registration' },
+  { id: 38, name: 'FSSAI (Food Licensing FoSCoS)', url: 'https://foscos.fssai.gov.in', category: 'Employment & Commerce', description: 'Food safety licensing' },
+  { id: 39, name: 'Shram Suvidha Portal (Shop & Establishment)', url: 'https://shramsuvidha.gov.in', category: 'Employment & Commerce', description: 'Labor regulation compliance' },
+  { id: 40, name: 'Digital Police Portal (Verification Services)', url: 'https://digitalpolice.gov.in', category: 'Employment & Commerce', description: 'Police verification' },
+  { id: 41, name: 'CSC / Common Service Centres Network', url: 'https://csc.gov.in', category: 'Employment & Commerce', description: 'Government service centers' },
+  { id: 42, name: 'IRCTC Ticket Booking Network', url: 'https://irctc.co.in', category: 'Employment & Commerce', description: 'Railway ticket booking' },
+  { id: 43, name: 'Controller of Certifying Authorities (DSC)', url: 'https://cca.gov.in', category: 'Employment & Commerce', description: 'Digital signatures' },
+  { id: 44, name: 'NPCI Financial Engine (Money Transfers)', url: 'https://npci.org.in', category: 'Employment & Commerce', description: 'Payment systems' },
+  { id: 45, name: 'Indian Institute of Remote Sensing (IIRS)', url: 'https://iirs.gov.in', category: 'Employment & Commerce', description: 'Remote sensing research' },
+  { id: 46, name: 'Indian Institute of Millets Research (IIMR)', url: 'https://millets.res.in', category: 'Employment & Commerce', description: 'Agricultural research' },
+]
