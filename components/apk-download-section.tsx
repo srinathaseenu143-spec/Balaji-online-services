@@ -56,17 +56,19 @@ export default function APKDownloadSection() {
               </ul>
 
               <motion.a
-                href="https://lunch-ruby.vercel.app/"
+                href="https://github.com/srinathaseenu143-spec/Balaji-online-services/releases"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg bg-secondary text-primary font-semibold px-6 py-3 hover:bg-secondary/90 transition-all active:scale-95 shadow-lg"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <Download className="h-5 w-5" />
-                Download APK
+                Get APK from GitHub Releases
               </motion.a>
 
               <p className="text-xs text-white/70">
-                APK v1.0 • Android 6.0+ • ~25 MB
+                APK v1.0 • Android 8.0+ • ~15-25 MB
               </p>
             </div>
 
@@ -132,16 +134,16 @@ export default function APKDownloadSection() {
 
         {/* Info Box */}
         <motion.div
-          className="rounded-2xl bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 p-6 flex gap-4"
+          className="rounded-2xl bg-gradient-to-r from-primary/10 to-accent/5 border border-primary/20 p-6 flex gap-4"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <Zap className="h-6 w-6 text-secondary flex-shrink-0" />
+          <Zap className="h-6 w-6 text-primary flex-shrink-0" />
           <div className="space-y-2">
-            <h4 className="font-semibold text-foreground">Coming Soon</h4>
+            <h4 className="font-semibold text-foreground">Build Instructions Available</h4>
             <p className="text-sm text-muted-foreground">
-              The official Balaji Online Service APK is under development. We're working hard to bring you a seamless mobile experience. Subscribe to our newsletter for download notifications.
+              Download the real APK from GitHub Releases or follow the comprehensive build guide to create your own APK using Capacitor and Android Studio. See the BUILD_APK_REAL.md documentation for step-by-step instructions.
             </p>
           </div>
         </motion.div>

@@ -76,44 +76,47 @@ export default function DownloadPage() {
           className="mb-16 rounded-2xl border border-primary/20 bg-card/60 p-8 text-center backdrop-blur-sm sm:p-12"
         >
           <h2 className="mb-4 text-2xl font-bold sm:text-3xl">Ready to Install?</h2>
-          <p className="mb-8 text-muted-foreground">
-            Latest version: 1.0.0 • Compatible with Android 8.0+
+          <p className="mb-2 text-muted-foreground">
+            Latest version: 1.0.0 • Compatible with Android 8.0+ • ~15-25 MB
+          </p>
+          <p className="mb-8 text-sm text-muted-foreground">
+            The APK on this page is a placeholder. Download the real APK from GitHub Releases or follow the build guide.
           </p>
 
           <div className="space-y-4">
             <a
-              href="https://lunch-ruby.vercel.app/"
-              download="balaji-online-service.apk"
+              href="https://github.com/srinathaseenu143-spec/Balaji-online-services/releases"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-primary to-accent px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:shadow-xl hover:scale-105 active:scale-95"
             >
               <Download className="h-5 w-5 transition-transform group-hover:-translate-y-1" />
-              Download APK (Latest)
+              Get APK from Releases
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </a>
             <p className="text-sm text-muted-foreground">
-              File size: ~45 MB • Direct download
+              Download latest build from GitHub Releases or build from source
             </p>
           </div>
 
-          {/* Alternative Downloads */}
+          {/* Build Your Own */}
           <div className="mt-8 space-y-3 border-t border-border/50 pt-8">
-            <p className="text-sm font-medium text-muted-foreground">Alternative download sources:</p>
+            <p className="text-sm font-medium text-muted-foreground">Want to build the APK yourself?</p>
             <div className="flex flex-wrap justify-center gap-3">
               <a
-                href="https://play.google.com/store/apps"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/BUILD_APK_REAL.md"
+                download
                 className="rounded-lg border border-primary/30 bg-primary/5 px-4 py-2 text-sm font-medium text-primary transition-all hover:bg-primary/10 hover:border-primary/50"
               >
-                Google Play Store
+                View Build Guide
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/srinathaseenu143-spec/Balaji-online-services"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-lg border border-primary/30 bg-primary/5 px-4 py-2 text-sm font-medium text-primary transition-all hover:bg-primary/10 hover:border-primary/50"
               >
-                GitHub Releases
+                GitHub Repository
               </a>
             </div>
           </div>
