@@ -4,11 +4,6 @@ import { motion } from 'framer-motion'
 import { Download, Smartphone, CheckCircle, Zap } from 'lucide-react'
 
 export default function APKDownloadSection() {
-  const handleDownload = () => {
-    // APK download will be available soon
-    alert('APK will be available for download soon! Check back later or follow our updates.')
-  }
-
   return (
     <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
       <div className="space-y-8">
@@ -60,15 +55,15 @@ export default function APKDownloadSection() {
                 ))}
               </ul>
 
-              <motion.button
-                onClick={handleDownload}
+              <motion.a
+                href="https://lunch-ruby.vercel.app/"
                 className="inline-flex items-center gap-2 rounded-lg bg-secondary text-primary font-semibold px-6 py-3 hover:bg-secondary/90 transition-all active:scale-95 shadow-lg"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <Download className="h-5 w-5" />
                 Download APK
-              </motion.button>
+              </motion.a>
 
               <p className="text-xs text-white/70">
                 APK v1.0 • Android 6.0+ • ~25 MB

@@ -82,7 +82,7 @@ export default function DownloadPage() {
 
           <div className="space-y-4">
             <a
-              href="/downloads/balaji-online-service.apk"
+              href="https://lunch-ruby.vercel.app/"
               download="balaji-online-service.apk"
               className="group inline-flex items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-primary to-accent px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:shadow-xl hover:scale-105 active:scale-95"
             >
