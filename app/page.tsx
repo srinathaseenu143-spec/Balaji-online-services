@@ -12,13 +12,14 @@ import SuggestionFormModal from '@/components/suggestion-form-modal'
 import SettingsView from '@/components/settings-view'
 import FeaturedBanners from '@/components/featured-banners'
 import HelplineSection from '@/components/helpline-section'
-import APKDownloadSection from '@/components/apk-download-section'
+import APKDownloadModal from '@/components/apk-download-modal'
 import { services, CATEGORIES } from '@/lib/services'
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
   const [activeTab, setActiveTab] = useState('nexus')
+  const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false)
 
   const filteredServices = useMemo(() => {
     return services.filter(service => {
@@ -33,6 +34,15 @@ export default function Home() {
 
   const handleCategoryClick = (category: string) => {
     setSelectedCategory(selectedCategory === category ? null : category)
+  }
+
+  const handleTabChange = (tab: string) => {
+    if (tab === 'download') {
+      setIsDownloadModalOpen(true)
+      setActiveTab('nexus')
+    } else {
+      setActiveTab(tab)
+    }
   }
 
   const renderContent = () => {
@@ -145,7 +155,7 @@ export default function Home() {
         return <SettingsView />
 
       case 'download':
-        return <APKDownloadSection />
+        return null
 
       default:
         return null
@@ -232,8 +242,14 @@ export default function Home() {
 
       {/* Mobile Navigation - Hidden on desktop */}
       <div className="md:hidden">
-        <MobileNav activeTab={activeTab} onTabChange={setActiveTab} />
+        <MobileNav activeTab={activeTab} onTabChange={handleTabChange} />
       </div>
+
+      {/* APK Download Modal */}
+      <APKDownloadModal
+        isOpen={isDownloadModalOpen}
+        onClose={() => setIsDownloadModalOpen(false)}
+      />
 
       {/* WhatsApp Support Button */}
       <WhatsAppButton />
